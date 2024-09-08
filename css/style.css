@@ -1,0 +1,124 @@
+/* Aplicando as fontes manuscritas "Brush Script MT" e "Lucida Handwriting" */
+body {
+    background-color: rgb(255, 168, 183);
+    font-family: 'Brush Script MT', 'Lucida Handwriting', cursive; /* Fontes manuscritas */
+    margin: 0;
+    padding: 0;
+    background-position: top left, top left;
+    background-repeat: repeat, repeat;
+    background-size: 350px, 230px;
+}
+
+/* Layout principal usando grid */
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 50px auto;
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px;
+    box-sizing: border-box;
+}
+
+/* Container flexível e centralizado */
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Estilo de títulos */
+h1, h2 {
+    font-family: 'Brush Script MT', 'Lucida Handwriting', cursive; /* Aplicando as fontes manuscritas */
+    color: rgb(255, 255, 255);
+    text-shadow: rgb(0, 0, 0) 4px 2.5px 2px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 70px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+/* Estilo dos parágrafos */
+p {
+    font-size: 20px;
+    text-align: center;
+    color: rgb(210, 18, 18);
+    text-shadow: 1.5px 1px 1.5px black;
+}
+
+/* Estilo dos botões */
+#bot {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+button {
+    font-size: large;
+    font-family: 'Brush Script MT', 'Lucida Handwriting', cursive; /* Fonte manuscrita nos botões */
+    background-color: red;
+    color: rgb(255, 255, 255);
+    width: 70px;
+    height: 30px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: darkred;
+}
+
+/* Adicionando GIF centralizado abaixo dos emojis */
+#gif-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#gif-container img {
+    width: 300px;
+    height: auto;
+}
+
+/* Melhorando a responsividade para dispositivos móveis */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 50px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    button {
+        width: 70px;
+        height: 30px;
+    }
+
+    main {
+        margin: 20px auto;
+    }
+
+    #gif-container img {
+        width: 200px;
+    }
+}
+/* Start https://www.cursors-4u.com */ * {cursor: url(https://cur.cursors-4u.net/holidays/hol-2/hol116.cur), auto !important;} /* End https://www.cursors-4u.com */
